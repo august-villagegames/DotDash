@@ -1,0 +1,48 @@
+---
+globs: SPEC.md,*.md,*.feature
+description: How to write crisp, testable acceptance criteria with BDD/Gherkin.
+---
+
+## Acceptance Criteria — Quick Guide
+
+- **Be testable and observable**: Anyone can verify pass/fail by observing system outputs/UX.
+- **Use Given/When/Then** for behaviors; add edge cases. Keep each scenario independent.
+- **Quantify** non-functional needs (performance, accessibility, security, analytics) with numbers.
+
+### BDD Pattern
+```gherkin
+Scenario: <concise behavior name>
+Given <initial state/context>
+And <additional context>
+When <user action or system event>
+Then <single, observable outcome>
+And <additional outcome if needed>
+```
+
+### Examples
+```gherkin
+Scenario: Successful email login
+Given a registered user with email "user@example.com"
+And the user is on the login page
+When the user submits valid credentials
+Then the user is redirected to the dashboard
+And a welcome message is displayed
+
+Scenario: Rate limit after 5 failed attempts
+Given an unrecognized user
+When 5 consecutive login attempts fail within 10 minutes
+Then further attempts are blocked for 15 minutes
+And an error message explains the wait time
+```
+
+### Non-Functional Criteria (make them measurable)
+- **Performance**: e.g., P95 page load ≤ 2.5s on 4G; API P95 ≤ 400ms under 100 RPS.
+- **Accessibility**: e.g., Meets WCAG 2.2 AA; keyboard-only navigation; focus states visible.
+- **Security**: e.g., Inputs validated; no sensitive data in logs; authz enforced for all endpoints.
+- **Analytics/Telemetry**: e.g., On <event>, record <event_name> with properties <list>.
+
+### Anti-patterns to avoid
+- Vague language ("fast", "intuitive").
+- Combining multiple behaviors in one scenario.
+- Hidden implementation details in criteria.
+

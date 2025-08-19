@@ -1,0 +1,59 @@
+---
+globs: SPEC.md
+description: Minimal SPEC.md template for planning, requirements, and success criteria.
+---
+
+## SPEC.md — Minimal Template
+
+Copy this structure in [SPEC.md](mdc:SPEC.md). Keep sections short; link details if needed.
+
+```md
+# Title
+
+## Overview
+- Problem: 
+- Users/Stakeholders: 
+- Out of scope: 
+
+## Goal & Success Metrics (SMART)
+- Primary goal (1 sentence): 
+- Metrics: 
+  - Metric 1 (target by date): 
+  - Metric 2 (target by date): 
+
+## Requirements (MoSCoW)
+- Must: 
+- Should: 
+- Could: 
+- Won’t (not now): 
+
+## Examples (Specification by Example)
+| Context/Input | Action | Expected Outcome |
+|---|---|---|
+|  |  |  |
+|  |  |  |
+
+## Acceptance Criteria (BDD)
+For each key behavior, add clear, testable criteria.
+
+Scenario: <concise name>
+Given <starting context>
+And <additional context>
+When <action>
+Then <observable outcome>
+And <additional outcome>
+
+## Risks, Assumptions, Dependencies
+- Risks: 
+- Assumptions: 
+- Dependencies: 
+
+## Milestones & Owners
+- Milestone 1 — Owner — Date
+- Milestone 2 — Owner — Date
+
+## Sign-off
+- Sponsor: 
+- Tech Lead: 
+```
+

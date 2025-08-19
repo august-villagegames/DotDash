@@ -1,0 +1,31 @@
+---
+alwaysApply: true
+description: Lightweight spec-driven development for non-engineers — plan, specify, prioritize, accept.
+---
+
+## Spec-Driven Development (SDD) — Simple Rules
+
+- **Purpose**: Align on what to build (outcomes) before how to build it (implementation).
+- **Single source of truth**: Keep the working spec in [SPEC.md](mdc:SPEC.md).
+- **Who**: Sponsor/PM owns the spec; Engineering/Design/QA review and own feasibility, UX, and testability.
+
+### Process (keep it short; iterate)
+1. **Goal + Metrics (SMART)**: Write a one-sentence goal and 2–3 success metrics that are Specific, Measurable, Achievable, Relevant, Time-bound.
+2. **Scope with Examples**: State in-scope/out-of-scope. Add 3–7 concrete examples (Specification by Example) showing inputs, actions, and outcomes.
+3. **Acceptance Criteria (BDD)**: Write Given/When/Then criteria for each example and key edge cases.
+4. **Prioritize (MoSCoW)**: Must, Should, Could, Won’t for requirements. Ship Must first.
+5. **Risks/Assumptions/Dependencies**: List what could block delivery and what you’re assuming.
+6. **Sign-off**: Sponsor + Tech Lead confirm the spec is clear, feasible, and testable.
+7. **Traceability**: Link tickets/PRs back to sections in [SPEC.md](mdc:SPEC.md). Update the spec when scope changes.
+
+### Definition of Done (DoD)
+- All **Must-have** requirements implemented.
+- All **Acceptance Criteria** pass via demo or test.
+- **Success metrics** are instrumented and baselined.
+- **Risks** resolved or accepted; **sign-off** recorded in [SPEC.md](mdc:SPEC.md).
+
+### Writing Guidelines
+- Prefer plain language; avoid solution/implementation details.
+- Make criteria observable and measurable; avoid adjectives ("fast", "easy").
+- Use examples for clarity; keep the spec concise and living (update as you learn).
+

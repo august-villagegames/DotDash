@@ -1,0 +1,6 @@
+# This is a placeholder for the warning tray icon
+# The actual icon should be a 16x16 or 32x32 PNG image
+# Design: Same as main icon but with warning indicator
+# - Base icon with small warning triangle (!) in corner
+# - Template image for automatic macOS theming
+# - Indicates permission issues or errors

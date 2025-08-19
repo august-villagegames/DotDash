@@ -1,0 +1,39 @@
+.logo.vite:hover {
+  filter: drop-shadow(0 0 2em #747bff);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafb);
+}
+/* Purge default template styles; Tailwind will handle base styles */
+:root {}
+
+.container {}
+
+.logo { display: none; }
+
+.logo.tauri:hover {
+  filter: drop-shadow(0 0 2em #24c8db);
+}
+
+.row {}
+
+a {}
+
+h1 {}
+
+input,
+button {}
+
+button {}
+
+button:hover {}
+button:active {}
+
+input,
+button {}
+
+#greet-input {}
+
+@media (prefers-color-scheme: dark) {
+}
