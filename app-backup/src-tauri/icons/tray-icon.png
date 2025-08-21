@@ -1,6 +1,0 @@
-# This is a placeholder for the tray icon
-# The actual icon should be a 16x16 or 32x32 PNG image
-# Design: Simple monochrome icon representing text expansion
-# - A small dot (.) followed by abbreviated text lines
-# - Template image (black/white) for automatic macOS theming
-# - Should be recognizable at small sizes

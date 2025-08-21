@@ -1,6 +1,0 @@
-# This is a placeholder for the paused tray icon
-# The actual icon should be a 16x16 or 32x32 PNG image
-# Design: Same as main icon but with a pause symbol overlay
-# - Base icon with small pause bars (||) in corner
-# - Template image for automatic macOS theming
-# - Clearly indicates paused state

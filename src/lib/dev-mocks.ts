@@ -17,7 +17,7 @@ export const mockInvoke = async (command: string, args?: any): Promise<any> => {
   }
 };
 
-export const mockListen = async (event: string, handler: (event: any) => void): Promise<() => void> => {
+export const mockListen = async (event: string, _handler: (event: any) => void): Promise<() => void> => {
   console.log(`[DEV MOCK] listen('${event}')`);
   
   // Return a mock unlisten function
