@@ -3,7 +3,7 @@
 # Clean Build Script
 # This script cleans all build artifacts and caches
 
-echo "🧹 Cleaning DotDashDash build artifacts..."
+echo "🧹 Cleaning DotDash build artifacts..."
 echo ""
 
 # Colors

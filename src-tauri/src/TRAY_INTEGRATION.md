@@ -2,7 +2,7 @@
 
 ## Overview
 
-The system tray integration transforms DotDashDash into a proper menu bar application for macOS. This feature provides quick access to core functionality without requiring the main window to be open.
+The system tray integration transforms DotDash into a proper menu bar application for macOS. This feature provides quick access to core functionality without requiring the main window to be open.
 
 ## Architecture
 
@@ -104,31 +104,31 @@ The tray menu includes the following items:
 
 1. **Toggle Expansions** - Pause/Resume text expansions
 2. **Separator**
-3. **Open DotDashDash** - Show main application window
+3. **Open DotDash** - Show main application window
 4. **Diagnostics** - Open diagnostics view
 5. **Separator**
-6. **Quit DotDashDash** - Exit application with cleanup
+6. **Quit DotDash** - Exit application with cleanup
 
 ## Icon States
 
 ### Active State
 - **Icon**: Standard tray icon
-- **Tooltip**: "DotDashDash - Active"
+- **Tooltip**: "DotDash - Active"
 - **Meaning**: Expansion engine is running and ready
 
 ### Paused State
 - **Icon**: Icon with pause indicator
-- **Tooltip**: "DotDashDash - Paused"
+- **Tooltip**: "DotDash - Paused"
 - **Meaning**: Expansion engine is paused
 
 ### Warning State
 - **Icon**: Icon with warning indicator
-- **Tooltip**: "DotDashDash - Warning (Check permissions)"
+- **Tooltip**: "DotDash - Warning (Check permissions)"
 - **Meaning**: Permission issues or configuration problems
 
 ### Error State
 - **Icon**: Icon with error indicator
-- **Tooltip**: "DotDashDash - Error"
+- **Tooltip**: "DotDash - Error"
 - **Meaning**: Critical errors preventing normal operation
 
 ## Configuration
@@ -142,7 +142,7 @@ The tray menu includes the following items:
       "iconPath": "icons/tray-icon.png",
       "iconAsTemplate": true,
       "menuOnLeftClick": false,
-      "tooltip": "DotDashDash"
+      "tooltip": "DotDash"
     }
   }
 }

@@ -114,7 +114,7 @@ describe('Accessibility Permission Flow Integration', () => {
     expect(screen.getByText('Accessibility Permission Required')).toBeInTheDocument();
 
     // Requirement 1.2: Clear, user-friendly explanation
-    expect(screen.getByText(/DotDashDash needs accessibility permission/)).toBeInTheDocument();
+    expect(screen.getByText(/DotDash needs accessibility permission/)).toBeInTheDocument();
 
     // Requirement 1.4: No complex technical details (avoid false positives)
     expect(screen.queryByText(/debug log/i)).not.toBeInTheDocument();
@@ -128,6 +128,6 @@ describe('Accessibility Permission Flow Integration', () => {
 
     // Requirement 4.3: User-friendly language
     expect(screen.getByText(/No data is transmitted to external servers/)).toBeInTheDocument();
-    expect(screen.getByText('How DotDashDash Works')).toBeInTheDocument();
+    expect(screen.getByText('How DotDash Works')).toBeInTheDocument();
   });
 });

@@ -5,7 +5,7 @@
 
 set -e
 
-echo "🔍 Verifying DotDashDash build environment..."
+echo "🔍 Verifying DotDash build environment..."
 echo ""
 
 # Colors

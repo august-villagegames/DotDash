@@ -10,7 +10,13 @@
     "preview": "vite preview",
     "test": "vitest",
     "test:ui": "vitest --ui",
-    "tauri": "tauri"
+    "tauri": "tauri",
+    "build:mac": "tauri build -b dmg",
+    "checksum:mac": "cd src-tauri/target/release/bundle/macos && shasum -a 256 DotDash.dmg > DotDash-$(node -p \"require('../../../../../package.json').version\").sha256",
+    "notarize:mac": "bash ./build-scripts/notarize-mac.sh",
+    "staple:mac": "bash ./build-scripts/staple-mac.sh",
+    "sign:verify": "bash ./build-scripts/verify-signing.sh",
+    "release:mac": "npm run build:mac && npm run notarize:mac && npm run staple:mac && npm run sign:verify && npm run checksum:mac"
   },
   "dependencies": {
     "@radix-ui/react-checkbox": "^1.3.3",

@@ -1,16 +1,16 @@
-# DotDashDash — Implementation Status
+# DotDash — Implementation Status
 
 - Created: 2025-08-09 11:50 PT
 - Last Updated: 2025-08-13 21:30 PT
 - Status: **V1 COMPLETED** ✅ → **PHASE 2 PLANNING** 🎨
 
 ## Overview
-DotDashDash v1 implementation using Tauri + React + TypeScript + Tailwind + shadcn/ui is now complete and fully functional.
+DotDash v1 implementation using Tauri + React + TypeScript + Tailwind + shadcn/ui is now complete and fully functional.
 
 ## ✅ Completed Features
 
 ### 0. Project scaffolding
-- [x] Tauri + React + TS app scaffolded, bundle id set to `com.augustcomstock.dotdashdash`
+- [x] Tauri + React + TS app scaffolded, bundle id set to `com.augustcomstock.dotdash`
 - [x] Tailwind v3 + tokens + `tailwindcss-animate` configured
 - [x] shadcn-style primitives added: Button, Input, Textarea, Label, Card, Badge, Separator
 - [x] App shell (sidebar nav) with views: Shortcuts, Diagnostics, Settings
@@ -57,7 +57,7 @@ DotDashDash v1 implementation using Tauri + React + TypeScript + Tailwind + shad
 ### 7. **System Tray Integration** ⭐
 - [x] **Native macOS tray icon with context menu**
 - [x] **Pause/Resume expansions from tray**
-- [x] **Open DotDashDash from tray**
+- [x] **Open DotDash from tray**
 - [x] **Diagnostics access from tray**
 - [x] **Quit application from tray**
 - [x] **Dynamic tray icon states (Active/Paused/Warning/Error)**
@@ -91,7 +91,7 @@ DotDashDash v1 implementation using Tauri + React + TypeScript + Tailwind + shad
 
 ## 🚀 Ready for Use
 
-DotDashDash is now a fully functional text expansion application with:
+DotDash is now a fully functional text expansion application with:
 
 - **Native macOS Integration** - System tray, accessibility permissions, secure input detection
 - **Modern UI** - React + TypeScript + Tailwind CSS with shadcn/ui components

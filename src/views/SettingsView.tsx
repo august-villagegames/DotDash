@@ -36,7 +36,7 @@ export default function SettingsView() {
 
   function handleExport() {
     const text = serializeRules(rules);
-    downloadText("dotdashdash-rules.json", text);
+    downloadText("dotdash-rules.json", text);
   }
 
   async function handleImport(e: React.ChangeEvent<HTMLInputElement>) {
@@ -230,11 +230,11 @@ export default function SettingsView() {
                   onCheckedChange={(checked) => updateTrayPreferences({ showInDock: !!checked })}
                 />
                 <Label htmlFor="showInDock" className="text-sm">
-                  Show DotDashDash icon in the dock
+                  Show DotDash icon in the dock
                 </Label>
               </div>
               <div className="text-xs text-muted-foreground">
-                When disabled, DotDashDash will only appear in the menu bar.
+                When disabled, DotDash will only appear in the menu bar.
               </div>
             </div>
 

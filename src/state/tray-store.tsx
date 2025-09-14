@@ -30,7 +30,7 @@ type TrayContextValue = TrayState & TrayActions;
 
 const TrayContext = createContext<TrayContextValue | null>(null);
 
-const TRAY_STORAGE_KEY = 'dotdashdash.tray.preferences';
+const TRAY_STORAGE_KEY = 'dotdash.tray.preferences';
 
 function loadTrayPreferences(): TrayPreferences {
   try {

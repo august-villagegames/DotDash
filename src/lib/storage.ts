@@ -2,8 +2,8 @@ import type { ExpansionRule } from "@/types/expansion-rule";
 import { exists, readTextFile, writeTextFile, BaseDirectory } from "@tauri-apps/plugin-fs";
 
 export const RULES_VERSION = 1;
-const STORAGE_KEY = `dotdashdash.rules.v${RULES_VERSION}`;
-const RULES_PATH = "dotdashdash.rules.json";
+const STORAGE_KEY = `dotdash.rules.v${RULES_VERSION}`;
+const RULES_PATH = "dotdash.rules.json";
 
 export interface RulesFile {
   version: number;

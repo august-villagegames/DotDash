@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { PauseTitleIndicator } from "@/components/PauseStatusIndicator";
+import { Logo } from "@/components/Logo";
 import { Settings } from "lucide-react";
 import SettingsView from "@/views/SettingsView";
 
@@ -15,7 +16,7 @@ export function AppShell({ children, onNavigate, current }: { children: React.Re
       {/* Header with title and settings */}
       <header className="flex items-center justify-between p-4 border-b">
         <div className="flex items-center gap-4">
-          <h1 className="text-xl font-semibold">DotDashDash</h1>
+          <Logo size="md" />
           <PauseTitleIndicator />
         </div>
         

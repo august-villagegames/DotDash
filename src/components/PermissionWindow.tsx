@@ -90,7 +90,7 @@ export function PermissionWindow({ onPermissionGranted, onPermissionRevoked, onE
           {/* Main explanation */}
           <div id="permission-description" >
             <p >
-              DotDashDash needs accessibility permission to detect when you type your custom shortcuts and automatically expand them with your saved text.
+              DotDash needs accessibility permission to detect when you type your custom shortcuts and automatically expand them with your saved text.
             </p>
             <p >
               This permission allows the app to work seamlessly in any application on your Mac.
@@ -118,7 +118,7 @@ export function PermissionWindow({ onPermissionGranted, onPermissionRevoked, onE
               <div >
                 <Settings  aria-hidden="true" />
                 <div >
-                  <p >How DotDashDash Works</p>
+                  <p >How DotDash Works</p>
                   <p >
                     The app only monitors for your specific shortcut patterns (like ".email" or ".addr") and replaces them with your saved text. Everything else you type is completely ignored.
                   </p>

@@ -1,4 +1,4 @@
-# DotDashDash
+# DotDash
 
 A modern, native macOS text expansion application built with Tauri, React, and TypeScript.
 
@@ -108,7 +108,7 @@ npm run tauri build
 
 ## Permissions
 
-DotDashDash requires the following macOS permissions:
+DotDash requires the following macOS permissions:
 
 - **Accessibility**: Required for keystroke monitoring and text injection
 - **Input Monitoring**: Required for global keystroke capture
@@ -127,7 +127,7 @@ The project includes a complete build environment with:
 ### Build Outputs
 
 - **Development**: App runs with hot reload and live debugging
-- **Production**: `src-tauri/target/release/bundle/macos/DotDashDash.app`
+- **Production**: `src-tauri/target/release/bundle/macos/DotDash.app`
 - **Frontend**: `dist/` (for web deployment if needed)
 
 ## Development
@@ -135,7 +135,7 @@ The project includes a complete build environment with:
 ### Project Structure
 
 ```
-DotDashDash/
+DotDash/
 ├── src/                    # React frontend
 │   ├── components/         # UI components
 │   ├── views/             # Main application views

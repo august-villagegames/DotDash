@@ -64,7 +64,7 @@ impl TrayManager {
         let tray_icon = match TrayIconBuilder::new()
             .icon(icon)
             .menu(&menu)
-            .tooltip("DotDashDash - Text Expander")
+            .tooltip("DotDash - Text Expander")
             .on_tray_icon_event(|tray, event| {
                 if let Err(e) = Self::handle_tray_icon_event(tray, event) {
                     error!("Error handling tray icon event: {}", e);
@@ -151,10 +151,10 @@ impl TrayManager {
 
         let toggle_item = MenuItem::with_id(app_handle, "toggle_expansions", toggle_text, true, None::<&str>)?;
         let separator1 = PredefinedMenuItem::separator(app_handle)?;
-        let open_item = MenuItem::with_id(app_handle, "open_window", "Open DotDashDash", true, None::<&str>)?;
+        let open_item = MenuItem::with_id(app_handle, "open_window", "Open DotDash", true, None::<&str>)?;
         let diagnostics_item = MenuItem::with_id(app_handle, "diagnostics", "Diagnostics", true, None::<&str>)?;
         let separator2 = PredefinedMenuItem::separator(app_handle)?;
-        let quit_item = MenuItem::with_id(app_handle, "quit", "Quit DotDashDash", true, None::<&str>)?;
+        let quit_item = MenuItem::with_id(app_handle, "quit", "Quit DotDash", true, None::<&str>)?;
 
         let menu = Menu::with_items(app_handle, &[
             &toggle_item,
@@ -226,10 +226,10 @@ impl TrayManager {
         if let Some(tray_icon) = self.tray_icon.lock().unwrap().as_ref() {
             // Update tooltip based on state
             let tooltip = match state {
-                TrayIconState::Active => "DotDashDash - Active",
-                TrayIconState::Paused => "DotDashDash - Paused",
-                TrayIconState::Warning => "DotDashDash - Warning (Check permissions)",
-                TrayIconState::Error => "DotDashDash - Error",
+                TrayIconState::Active => "DotDash - Active",
+                TrayIconState::Paused => "DotDash - Paused",
+                TrayIconState::Warning => "DotDash - Warning (Check permissions)",
+                TrayIconState::Error => "DotDash - Error",
             };
             
             if let Err(e) = tray_icon.set_tooltip(Some(tooltip)) {

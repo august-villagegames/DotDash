@@ -42,10 +42,10 @@ describe('PermissionWindow', () => {
     );
 
     expect(screen.getByText('Accessibility Permission Required')).toBeInTheDocument();
-    expect(screen.getByText(/DotDashDash needs accessibility permission/)).toBeInTheDocument();
+    expect(screen.getByText(/DotDash needs accessibility permission/)).toBeInTheDocument();
     expect(screen.getByText(/Your keystrokes are never logged/)).toBeInTheDocument();
     expect(screen.getByText('Your Privacy is Protected')).toBeInTheDocument();
-    expect(screen.getByText('How DotDashDash Works')).toBeInTheDocument();
+    expect(screen.getByText('How DotDash Works')).toBeInTheDocument();
     expect(screen.getByRole('button', { name: /Open System Settings/ })).toBeInTheDocument();
   });
 

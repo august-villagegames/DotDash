@@ -1,11 +1,11 @@
 #!/bin/bash
 
-# Build Environment Setup for DotDashDash Tauri App
+# Build Environment Setup for DotDash Tauri App
 # This script sets up the complete build environment for the project
 
 set -e  # Exit on any error
 
-echo "🚀 Setting up build environment for DotDashDash..."
+echo "🚀 Setting up build environment for DotDash..."
 
 # Colors for output
 RED='\033[0;31m'

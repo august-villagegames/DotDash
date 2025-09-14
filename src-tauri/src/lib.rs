@@ -188,7 +188,7 @@ fn get_engine() -> &'static EngineState {
 }
 
 fn push_log(entries: &Arc<Mutex<Vec<String>>>, line: &str) {
-    // Also send to tauri-plugin-log → Console/DotDashDash.log
+    // Also send to tauri-plugin-log → Console/DotDash.log
     info!("{}", line);
     if let Ok(mut v) = entries.lock() {
         v.push(line.to_string());
