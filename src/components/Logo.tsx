@@ -1,5 +1,3 @@
-import React from 'react';
-
 interface LogoProps {
   variant?: 'default' | 'light' | 'mark-only';
   className?: string;
