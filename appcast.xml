@@ -3,12 +3,12 @@
     <channel>
         <title>DotDash</title>
         <item>
-            <title>0.2.16</title>
-            <pubDate>Wed, 19 Nov 2025 22:42:37 -0800</pubDate>
-            <sparkle:version>180</sparkle:version>
-            <sparkle:shortVersionString>0.2.16</sparkle:shortVersionString>
+            <title>0.2.17</title>
+            <pubDate>Thu, 20 Nov 2025 08:20:11 -0800</pubDate>
+            <sparkle:version>187</sparkle:version>
+            <sparkle:shortVersionString>0.2.17</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/august-villagegames/DotDash/releases/download/DotDash-0.2.16.dmg" length="3209614" type="application/octet-stream" sparkle:edSignature="KEB/Nib9Qk5+OHyGjinmwB50sBjuzUD+P/aBzdAD0zVjVnHcsfG6HR4jpAiYa+U+ZKG5dfzJrbErwjapiQSECA=="/>
+            <enclosure url="https://github.com/august-villagegames/DotDash/releases/download/DotDash-0.2.17.dmg" length="3209623" type="application/octet-stream" sparkle:edSignature="U3DxdFV3g8i2KN3BuVMIVa9vjIW/lE//vRFOPmfeohqkcrtDGo0N8eS/Em19ZM/zzmibOhQsDaeVF/D9gwI8DQ=="/>
         </item>
     </channel>
 </rss>
